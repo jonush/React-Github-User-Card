@@ -6,10 +6,12 @@ const Follower = (props) => {
       <img
       src={props.follower.avatar_url}
       alt='profile-pic'></img>
-      <h2>{props.follower.login}</h2>
+      <div className='follower-info'>
+        <h2>{props.follower.login}</h2>
+        <a href={props.follower.html_url}>Visit Profile</a>
+      </div>
     </div>
   )
 }
 
-// href={props.follower.url}
 export default Follower;
